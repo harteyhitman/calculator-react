@@ -40,11 +40,19 @@ function App() {
 
   const deleteLast = () => {
     if (calc === "") {
-      return;
+      return; 
     }
     const values = calc.slice(0, -1);
 
     setCalc(values);
+  };
+  const deleteLast1 = () => {
+    if (calc === "") {
+      return; 
+    }
+    // const values = calc.slice(0, -1);
+
+    setCalc(0);
   };
 
   return (
@@ -60,14 +68,17 @@ function App() {
           <button onClick={() => updateCalc("*")}>*</button>
           <button onClick={() => updateCalc("+")}>+</button>
           <button onClick={() => updateCalc("-")}>-</button>
-          <button onClick={deleteLast}>DEL</button>
+          
         </div>
 
         <div className="digits">
           {createDigits()}
           <button onClick={() => updateCalc("0")}>0</button>
           <button onClick={() => updateCalc(".")}>.</button>
+          <button onClick={deleteLast}>DEL</button>
+          <button onClick={deleteLast1}>CLR</button>
           <button onClick={calculate}>=</button>
+          <button onClick={calculate}>Azeez</button>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@
   font-family:'fira sans', sans-serif;
 }
 body{
-  background-color: var(--light);
+  background-color: #131A2C;
 }
 .App{
       display: flex;
@@ -19,6 +19,8 @@ body{
       align-items: center;
       justify-content: center;
       font-size: 18px;
+      background-color: #131A2C;
+
       padding: 16px;
 }
 .calculator{
